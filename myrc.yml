@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     app: nginxpod
-  template:
+template:
   metadata:
      labels:
        app: nginxpod
-  spec:     
+  spec:
   containers:
   - name: mynginxcontainer
     image: nginx
