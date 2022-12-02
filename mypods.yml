@@ -4,8 +4,8 @@ kind: Pod
 metadata:
    name: hello-pod
 spec:
-  containers:
-   - name: first-container
-     image: nginx
-     ports:
-     - containerPort: 80
+   containers:
+     - name: myfrst-container
+       image: nginx
+       ports:
+         - containerPort: 80   
