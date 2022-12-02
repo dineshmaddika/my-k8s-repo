@@ -11,7 +11,7 @@ spec:
    metadata:
     labels:
      app: mynginxpod     
-    spec:
+   spec:
      containers:
      - name: mynginxcon
        image: nginx
