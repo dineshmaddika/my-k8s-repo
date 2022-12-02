@@ -9,9 +9,9 @@ spec:
      app: mynginxpod
   template:
    metadata:
-   labels:
+    labels:
      app: mynginxpod     
-   spec:
+    spec:
      containers:
      - name: mynginxcon
        image: nginx
