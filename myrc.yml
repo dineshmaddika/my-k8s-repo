@@ -1,19 +1,19 @@
-         
+
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: mynginxrc
+  name: mynginxrepcon
 spec:
-  replicas: 5
+  replicas: 2
   selector:
-    app: mynginx
+     app: mynginxpod
   template:
-    metadata:
-      labels:
-        app: mynginx
-    spec:
-      containers:
-      - name: mynginxcontainer
-        image: nginx
-        ports:
-        - containerPort: 80
+  metadata:
+   labels:
+     app: mynginxpod     
+  spec:
+   containers:
+   - name: mynginxcon
+     image: nginx
+     ports:
+     - containerport: 80
