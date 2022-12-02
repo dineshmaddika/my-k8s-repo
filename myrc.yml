@@ -8,10 +8,10 @@ spec:
   selector:
      app: mynginxpod
   template:
-  metadata:
+   metadata:
    labels:
      app: mynginxpod     
-  spec:
+   spec:
    containers:
    - name: mynginxcon
      image: nginx
